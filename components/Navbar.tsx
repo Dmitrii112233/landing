@@ -14,7 +14,7 @@ const NavBar = () => {
             <a href="#partners" className="hover:text-purple-300">Partners</a>
             <a href="#contact" className="hover:text-purple-300">Contact</a>
             <button
-                className="px-4 py-2 rounded-md font-medium bg-[#DF5950]"
+                className="px-4 py-2 rounded-md font-medium bg-[#DF5950] cursor-pointer"
             >
               Get Ticket
             </button>

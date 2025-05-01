@@ -80,7 +80,7 @@ const HeroSection: React.FC = () => {
                     </div>
 
                     <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-                        <button className="px-8 py-3 rounded-md font-bold text-lg bg-[#DF5950]">
+                        <button className="px-8 py-3 rounded-md font-bold text-lg bg-[#DF5950] cursor-pointer">
                             Get Your Free Ticket
                         </button>
                         <div className="text-sm">
