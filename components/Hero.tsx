@@ -11,7 +11,7 @@ interface TimeLeft {
 
 const calculateTimeLeft = (): TimeLeft => {
     const nowMs: number = Date.now();
-    const targetMs: number = new Date("2025-06-30T15:45:00Z").getTime();
+    const targetMs: number = new Date("2025-07-30T09:00:00Z").getTime();
     const diff: number = targetMs - nowMs;
 
     if (diff <= 0) {
@@ -55,7 +55,7 @@ const HeroSection: React.FC = () => {
             className="relative h-screen w-full text-white"
             style={{
                 background: "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7))",
-                backgroundImage: "url(/programming.jpg)",
+                backgroundImage: "url(/conference_about.jpg)",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}

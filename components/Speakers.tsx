@@ -20,31 +20,28 @@ interface SpeakerCardProps {
 }
 
 const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker }) => (
-    <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
-        <div className="relative">
+    <div className="rounded-lg mt-10 overflow-hidden shadow-[0_4px_6px_rgba(200,154,252,0.2)] transition-transform hover:scale-105 hover:shadow-[0_4px_6px_rgba(200,154,252,0.6)]">
+        <div className="flex flex-col items-center justify-center">
             <img
                 src={speaker.image}
                 alt={speaker.name}
-                className="w-full h-100 object-cover"
+                className="h-70 w-70 object-cover rounded-full"
             />
-            <div className="absolute bottom-0 left-0 right-0 h-16 flex items-center justify-center bg-[#DF5950]">
-                <h3 className="text-xl font-bold text-white">{speaker.name}</h3>
+            <div className="flex items-center justify-center mt-4">
+                <h3 className="text-2xl font-bold text-[#DF5950]">{speaker.name}</h3>
             </div>
         </div>
-        <div className="p-6">
+        <div className="p-6 text-center">
             <p className="text-[#C89AFC] mb-4">{speaker.position}</p>
             <p className="text-gray-300 mb-4 italic">"{speaker.quote}"</p>
-            <div className="flex flex-col space-x-4 space-y-4 text-2xl">
+            <div className="flex items-center justify-center space-x-4 text-2xl">
                 <a
                     href={speaker.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-500 hover:text-black"
                 >
-                    <div className="flex items-center cursor-pointer w-full space-x-2">
-                        <FaGithub aria-label="GitHub" />
-                        <span className="text-sm">{speaker.github}</span>
-                    </div>
+                    <FaGithub aria-label="GitHub" />
                 </a>
                 <a
                     href={speaker.linkedin}
@@ -52,10 +49,7 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker }) => (
                     rel="noopener noreferrer"
                     className="text-gray-500 hover:text-blue-700"
                 >
-                    <div className="flex items-center cursor-pointer w-full space-x-2">
-                        <FaLinkedin aria-label="LinkedIn" />
-                        <span className="text-sm">{speaker.linkedin}</span>
-                    </div>
+                    <FaLinkedin aria-label="LinkedIn" />
                 </a>
                 <a
                     href={speaker.instagram}
@@ -63,10 +57,7 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker }) => (
                     rel="noopener noreferrer"
                     className="text-gray-500 hover:text-pink-600"
                 >
-                    <div className="flex items-center cursor-pointer w-full space-x-2">
-                        <FaInstagram aria-label="Instagram" />
-                        <span className="text-sm">{speaker.instagram}</span>
-                    </div>
+                    <FaInstagram aria-label="Instagram" />
                 </a>
             </div>
         </div>
@@ -197,7 +188,7 @@ export const speakersData: Speaker[] = [
 ];
 
 const SpeakersSection: React.FC = () => (
-    <section className="py-12 bg-gray-100">
+    <section className="py-12 bg-gray-100" id="speakers">
         <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">Our Speakers</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
