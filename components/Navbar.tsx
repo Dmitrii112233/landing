@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
       <nav className="bg-black text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold" style={{ color: '#C89AFC' }}>
+          <div className="text-2xl font-bold text-[#C89AFC]">
             ImproveConf
           </div>
           <div className="hidden md:flex space-x-6 flex justify-between items-center">

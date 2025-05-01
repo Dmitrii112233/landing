@@ -1,6 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Hero from "../../components/Hero";
-import About from "../../components/About";
+import SpeakersSection from "../../components/Speakers";
 import Team from "../../components/Team";
 import Contact from "../../components/Contact";
 
@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <Navbar/>
       <Hero/>
-      <About/>
+      <SpeakersSection/>
       <Team/>
       <Contact/>
     </div>
